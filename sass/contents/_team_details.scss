@@ -1,0 +1,40 @@
+.team-details{
+	padding: 100px 0;
+	.about-team-member{
+		h3{
+			color: $color1;
+			font-weight: 900;
+			margin-top: 0;
+		}
+		p{
+			margin-bottom: 30px;
+		}
+		.team-member-body{
+			.team-member-social{
+				ul{
+					padding: 0;
+					margin: 0;
+					float: right;
+					li{
+						list-style: none;
+						display: inline-block;
+						a{
+							width: 36px;
+							height: 36px;
+							line-height: 36px;
+							text-align: center;
+							background-color: #696969;
+							border-radius: 50%;
+							color: #fff;
+							display: inline-block;
+							transition: all .5s;
+							&:hover{
+								background-color: $color1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

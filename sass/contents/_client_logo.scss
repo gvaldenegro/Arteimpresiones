@@ -1,0 +1,25 @@
+.client-logo{
+	padding: 100px 0;
+	.client-logo-wrap{
+		border: 1px solid #efefef;
+		padding: 52px 0;
+		width: 100%;
+		text-align: center;
+		img{
+			&.grayscale {
+				filter: grayscale(100%);
+			    -webkit-filter: grayscale(100%);
+			    transition: filter .5s ease;
+			    -webkit-transition: -webkit-filter .5s ease;
+		        width: auto;
+	    		display: inline-block;
+			}
+		}
+		&:hover{
+			.grayscale {
+				filter: grayscale(0);
+	    		-webkit-filter: grayscale(0);
+			}
+		}
+	}
+}

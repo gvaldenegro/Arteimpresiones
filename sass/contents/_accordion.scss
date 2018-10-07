@@ -1,0 +1,80 @@
+.tab-acc-panel-group{
+			padding-top: 18px;
+		}
+		.tab-acc-panel{
+			box-shadow: none;
+			margin-bottom: 0;
+			.tab-acc-body{
+				padding: 22px 14px 28px;
+			}
+		}
+		.tab-acc-panel-title{
+			border-width: 1px 1px 1px 0;
+			border-style: solid;
+			border-color: #efefef;
+			margin: 0;
+			a{
+				text-decoration: none;
+				color: $color1;
+				font-weight: bold;
+				line-height: 24px;
+				padding: 14px 14px 15px 10px;
+				display: block;
+				border-left: 4px solid $color1;
+				span{
+					float: right;
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					text-align: center;
+					background-color: $color1;
+					border-radius: 50%;
+					position: relative;
+					
+					&:before {
+					    content: " ";
+					    position: absolute;
+					    right: 10px;
+					    top: 50%;
+					    margin-top: -1px;
+					    width: 10px;
+					    height: 2px;
+					    display: inline-block;
+					    background-color: #fff;
+					    -webkit-transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					    -moz-transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					    -o-transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					    transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					}
+					&:after{
+						content: " ";
+					    position: absolute;
+					    right: 10px;
+					    top: 50%;
+					    margin-top: -1px;
+					    width: 10px;
+					    height: 2px;
+					    display: inline-block;
+					    background-color: #fff;
+					    -webkit-transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					    -moz-transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					    -o-transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					    transition: background-color .2s ease-in-out,transform .2s ease-in-out,width .2s ease-in-out;
+					}
+				}
+				&.collapsed {
+					span{
+						background-color: #767676;
+						&:before {
+					        transform: rotate(-90deg);
+						    -webkit-transform: rotate(-90deg);
+						    -moz-transform: rotate(-90deg);
+						    -o-transform: rotate(-90deg);
+						    -ms-transform: rotate(-90deg);
+						    -sand-transform: rotate(-90deg);
+						}
+					}
+				}
+			}
+		}

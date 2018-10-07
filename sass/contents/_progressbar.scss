@@ -1,0 +1,64 @@
+.skill-progress-bar {
+  margin: 0 0 30px;
+  overflow: hidden;
+  padding-right: 24px;
+  .progress-title-holder {
+    padding-bottom: 12px;
+    position: relative;
+    margin: 5px 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #2e2e2e;
+    .progress-title {
+      z-index: 100;
+    }
+    .progress-number-wrapper {
+      width: 100%;
+      z-index: 10;
+      .progress-number-mark {
+        margin-bottom: 12px;
+        padding: 0 8px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: #767676;
+      }
+    }
+  }
+  .progress-content-outter {
+    height: 12px;
+    border-radius: 8px;
+    background-color: #ebebeb;
+    .progress-content {
+      height: 12px;
+      border-radius: 8px;
+      background-color: $color1;
+      width: 0%;
+    }
+  }
+  .progress-number-wrapper,
+  .progress-number-mark {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    color: #767676;
+  }
+}
+
+
+
+
+
+ 
+
+
+
+
+

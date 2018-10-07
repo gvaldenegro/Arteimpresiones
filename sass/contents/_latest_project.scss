@@ -1,0 +1,112 @@
+.project-item{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	.project-image{
+
+	}
+	
+	.project-hover-mask{
+		position: absolute;
+		background-color: $color1;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		padding: 30px;
+		opacity: 0;
+		transition: opacity .5s;
+		.mask-container{
+			position: relative;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 1;
+		    padding: 30px 14px;
+		    transition: all .5s;
+			&:before{
+				content: '';
+				border-top: 1px dashed #fff;
+				border-bottom: 1px dashed #fff;
+			    width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    z-index: -1;
+			    transform: scale(0, 1);
+			    transition: transform .5s;
+			}
+			&:after{
+				content: '';
+				border-right: 1px dashed #fff;
+				border-left: 1px dashed #fff;
+				width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    z-index: -1;
+			    transform: scale(1, 0);
+			    transition: transform .5s;
+			}
+			h4{
+				margin: 0;
+				color: #fff;
+				transform: translateY(-10px);
+				transition: all .5s;
+			}
+			.divider-border{
+				border-bottom: 1px solid #fff;
+				width: 60%;
+				margin: 15px auto 11px;
+			}
+			p{
+				margin: 0;
+				color: #fff;
+				transform: translateY(10px);
+				transition: all .5s;
+			}
+			.image-link{
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-color: #fff;
+				color: #767676;
+				border-radius: 50%;
+				display: inline-block;
+				@include font-size(20);
+				margin-top: 12px;
+				transform: translateY(20px);
+				transition: all .5s;
+				text-decoration: none;
+				&:focus{
+					outline: none;
+					outline-offset: 0;
+				}
+			}
+		}
+	}
+	&:hover{
+		.project-hover-mask{
+			opacity: 1;
+			.mask-container{
+				&:before{
+					transform: scale(1, 1);
+				}
+				&:after{
+					transform: scale(1, 1);
+				}
+				h4{
+					transform: translateY(0);
+				}
+				p{
+					transform: translateY(0);
+				}
+				.image-link{
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+}

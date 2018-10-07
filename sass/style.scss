@@ -1,0 +1,163 @@
+/**
+  Theme Name: Samrtweb
+  Theme URL : http://edgebootstrap.com/themeforest/smartweb
+  Author    : Createuiux
+  Author URI: http://edgebootstrap.com
+  developed : edgebootstrap
+  Version   : 1.0.1
+**/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Header styles
+	# main menu
+# breadcrumb
+# homepage slider
+# about us
+# call to action
+# service slider
+# latest project
+# work process
+# testimonial
+# client logo
+# team
+# Footer styles
+# contact page
+# all styles
+# Portfolio styles
+# Pricing table
+# Progress bar
+# Team Details
+# accordion
+# blog
+# 404
+# smart web tab 3
+# responsive codes
+--------------------------------------------------------------*/
+
+@import '_allMixin.scss';
+@import '_veriables.scss';
+
+/****************
+ Header styles
+ ***************/
+@import 'contents/_header.scss';
+
+/****************
+ breadcrumb
+ ***************/
+@import 'contents/_breadcrumb.scss';
+
+/****************
+ homepage slider
+ ***************/
+@import 'contents/_slider1.scss';
+
+/****************
+ about us
+ ***************/
+
+@import 'contents/_about_us.scss';
+
+
+/****************
+ call to action
+ ***************/
+
+@import 'contents/_call_to_action.scss';
+
+
+/****************
+ service slider
+ ***************/
+
+@import 'contents/_service_item.scss';
+
+/***************
+ latest project
+***************/
+@import 'contents/_latest_project.scss';
+
+/***************
+ work process
+***************/
+@import 'contents/_work_process.scss';
+
+/***************
+ testimonial
+***************/
+@import 'contents/_testimonial.scss';
+
+/***************
+ client logo
+***************/
+@import 'contents/_client_logo.scss';
+
+/***************
+ team
+***************/
+@import 'contents/_team.scss';
+
+/****************
+ Footer styles
+ ***************/
+ @import 'contents/_footer.scss';
+
+/****************
+ contact page
+ ***************/
+
+ @import 'contents/_contact.scss';
+
+/****************
+ all styles
+ ***************/
+ @import 'contents/_default.scss';
+
+
+/****************
+ Portfolio styles
+ ***************/
+ @import 'contents/_portfolio.scss';
+
+
+/****************
+ Pricing table
+ ***************/
+ @import 'contents/_pricing_table.scss';
+
+/****************
+ Progress bar
+ ***************/
+ @import 'contents/_progressbar.scss';
+
+/****************
+ Team Details
+ ***************/
+ @import 'contents/_team_details.scss';
+
+/****************
+ accordion
+ ***************/
+ @import 'contents/_accordion.scss';
+
+
+/****************
+ blog
+ ***************/
+ @import 'contents/_blog.scss';
+
+ /****************
+ 404
+ ***************/
+ @import 'contents/_404.scss';
+
+/****************
+ smart web tab 3
+ ***************/
+@import 'contents/_smartweb-tab-3.scss';
+
+/****************
+ responsive codes
+ ***************/
+@import 'contents/_responsive.scss';

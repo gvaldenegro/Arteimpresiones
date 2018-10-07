@@ -1,0 +1,29 @@
+.portfolio{
+	padding: 100px 0;
+	.portfolio-subtitle{
+		font-weight: 700;
+		float: left;
+	}
+	.portfolio-sorting{
+		float: right;
+		li{
+			padding: 0;
+			color: #767676;
+			padding: 10px 25px;
+			@include border-radius(30px);
+			text-decoration: none;
+			display: inline-block;
+			@include transition(all, .5s, ease-in-out);
+			cursor: pointer;
+			&.active,
+			&:hover{
+				background-color: $color1;
+				color: #fff;
+			}
+		}
+	}
+	.portfolio-items{
+		display: inline-block;
+		width: 100%;
+	}
+}
